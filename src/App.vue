@@ -25,8 +25,7 @@ const onLoginSuccess = () => {
   <div>
     <LoginPage v-if="!isLoggedIn" @login-success="onLoginSuccess" />
     <template v-else>
-      <AppHeader :userData="parsedUserData" @logout="handleLogout" />
-      <PostsList :userId="parsedUserData.id" />
+
     </template>
   </div>
 </template>
