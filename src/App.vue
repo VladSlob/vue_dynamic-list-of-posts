@@ -4,10 +4,6 @@ import AppHeader from "./components/AppHeader.vue";
 import LoginPage from "./components/LoginPage.vue";
 import PostsList from "./components/PostsList.vue";
 
-// init from localStorage
-const userData = localStorage.getItem("user");
-const parsedUserData = userData ? JSON.parse(userData) : null;
-const isLoggedIn = ref(parsedUserData !== null);
 // console.log(userData, parsedUserData, isLoggedIn);
 const handleLogout = () => {
   localStorage.removeItem("user");
